@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap");
+
+/* purple: #865FB2
+teal: #4C95A7 */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	margin-top: 3rem;
+	text-align: center;
+	color: #343434;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+.company-logo {
+	margin-bottom: 2.8rem;
+	height: 30px;
+}
+
+.hero-images {
+	margin-bottom: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.hero-img {
+	width: 100%;
+}
+
+.header {
+	padding: 0 1rem;
+}
+
+.heading {
+	margin-bottom: 1.5rem;
+	padding: 0 2rem;
+	font-size: 2.5rem;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.description {
+	padding: 0 10px;
+	margin-bottom: 2rem;
+	font-weight: 500;
+	color: #807f7f;
+	line-height: 1.6;
+}
+
+.buttons {
+	margin-bottom: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.button {
+	padding: 1rem;
+	border-radius: 100px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+}
+
+.download {
+	width: 55%;
+	background-color: #4c95a7;
+}
+
+.download span {
+	color: #7cc8da;
+}
+
+.wii {
+	width: 40%;
+	background-color: #865fb2;
+}
+
+.num-sec {
+	margin-bottom: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: white;
+	border-radius: 100px;
+	border: none;
+}
+
+.num-sec::after {
+	content: "";
+	height: 120px;
+	width: 1px;
+	background-color: #cfcbcb;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.number {
+	font-size: 1rem;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	color: #999999;
+	border: 2px solid #e6e2e2;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.users {
+	margin-bottom: 3.5rem;
+	padding: 0 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 20px;
+	column-gap: 20px;
+}
+
+.user {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.details {
+	padding: 0 1rem;
+}
+
+.built-for {
+	margin-bottom: 1.2rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #4c95a7;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.details-heading {
+	margin-bottom: 1.3rem;
+	font-size: 2rem;
+	font-weight: 900;
+	line-height: 1.1;
+}
+
+.description-helper {
+	margin-bottom: 9rem;
+}
+
+.num-sec-2 {
+	position: absolute;
+	margin-bottom: 26rem;
+}
+
+.details-experience {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-image: linear-gradient(
+			rgba(76, 149, 167, 0.848),
+			rgba(76, 149, 167, 0.848)
+		),
+		url(desktop/image-footer.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 5rem 2.8rem 4rem;
+	position: relative;
+	z-index: -1;
+}
+
+.details-experience .description {
+	color: #fff;
+}
+
+.details-experience .download {
+	background-color: #865fb2;
+}
+
+.details-experience .download span {
+	color: #fff;
+	font-weight: 300;
+}
+
+@media screen and (min-width: 640px) {
+	.header {
+		padding: 0 5rem;
+	}
+
+	.description {
+		padding: 0 3rem;
+	}
+
+	.buttons {
+		flex-direction: row;
+	}
+
+	.download {
+		width: 200px;
+	}
+
+	.wii {
+		width: 150px;
+	}
+
+	.users {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.details-heading {
+		padding: 0 10rem;
+	}
+
+	.description-helper {
+		padding: 0 1rem;
+	}
+
+	.description-helper-2 {
+		padding: 0 2rem;
+	}
+
+	.details-experience {
+		padding: 7rem 2.8rem 5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding: 0 12rem;
+	}
+
+	.details {
+		padding: 0 3rem;
+	}
+
+	.description-helper {
+		padding: 0 8rem;
+	}
+
+	.description-helper-2 {
+		padding: 0 11rem;
+	}
+
+	.details-experience {
+		padding: 5.2rem 2.8rem 5rem;
+	}
+}
